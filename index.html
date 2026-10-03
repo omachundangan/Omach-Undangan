@@ -69,6 +69,7 @@
 </head>
 <body class="bg-sweet-bg text-sweet-textDark antialiased selection:bg-sweet-rose selection:text-sweet-primary">
 
+  <!-- Floating WhatsApp Chat Button -->
   <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20tanya-tanya%20mengenai%20paket%20undangan%20pernikahan.&type=phone_number&app_absent=0" 
      target="_blank" 
      class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white px-6 py-3.5 rounded-full flex items-center gap-3 font-semibold shadow-xl transition-all duration-300 hover:scale-105"
@@ -77,6 +78,7 @@
     <span class="text-sm md:text-base">Chat Sekarang</span>
   </a>
 
+  <!-- Header & Navigation Bar -->
   <header class="sticky top-0 bg-sweet-bg/95 backdrop-blur-md z-40 border-b border-sweet-primary/10 transition-all">
     <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
       <a href="#" class="flex items-center gap-2">
@@ -105,6 +107,7 @@
     </div>
   </header>
 
+  <!-- Hero Section with Swipeable Cards -->
   <section class="py-16 md:py-24 px-6 relative overflow-hidden">
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
@@ -170,8 +173,11 @@
               </ul>
             </div>
             <div class="space-y-3 pt-6 mt-6 border-t border-sweet-rose/50">
+              <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="w-full border-2 border-sweet-primary hover:bg-sweet-blush text-sweet-primary py-3 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2">
+                <i class="fas fa-folder-open"></i> Buka Katalog Undangan Cetak
+              </a>
               <a href="https://invee.net/user/template-preview" target="_blank" class="w-full bg-sweet-primary text-white hover:bg-sweet-textDark py-3 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow">
-                <i class="fas fa-mobile-screen"></i> Buka Katalog Digital
+                <i class="fas fa-mobile-screen"></i> Buka Katalog Undangan Digital
               </a>
             </div>
           </div>
@@ -207,6 +213,7 @@
 
     </div>
   </section>
+
   <!-- Katalog Cetak Fisik Section -->
   <section class="py-16 md:py-24 px-6 bg-white border-y border-sweet-rose/50" id="katalog-cetak-preview">
     <div class="max-w-7xl mx-auto">
@@ -219,116 +226,116 @@
           <p class="text-sweet-textMuted text-sm">Geser untuk melihat berbagai pilihan desain cetak fisik premium buatan Omach Undangan.</p>
         </div>
         <div class="mt-4 md:mt-0 flex gap-3">
-          <button onclick="document.getElementById('scroll-container').scrollBy({left: -240, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Left">
+          <button onclick="document.getElementById('scroll-container').scrollBy({left: -320, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Left">
             <i class="fas fa-arrow-left text-sm"></i>
           </button>
-          <button onclick="document.getElementById('scroll-container').scrollBy({left: 240, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Right">
+          <button onclick="document.getElementById('scroll-container').scrollBy({left: 320, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Right">
             <i class="fas fa-arrow-right text-sm"></i>
           </button>
         </div>
       </div>
 
       <div class="relative">
-        <div id="scroll-container" class="flex overflow-x-auto no-scrollbar gap-4 pb-6 pt-2 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible">
+        <div id="scroll-container" class="flex overflow-x-auto no-scrollbar gap-6 pb-6 pt-2 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible">
           
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/1DYWVszovmvyCjvYKyLa8_CwHStEOvBhy=w1000" alt="Cetak Utama" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1DYWVszovmvyCjvYKyLa8_CwHStEOvBhy';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas BC</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Tema Floral</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Tema Floral</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 900/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 900/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
 
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/1PcJTG0I6xHtMVnOvql3BBcZMUZXXIFOk=w1000" alt="Serly & Suanton" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1PcJTG0I6xHtMVnOvql3BBcZMUZXXIFOk';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas Glossy / BC</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Simpel Minimalis</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy / BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Simpel Minimaslis</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 1.000/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai (Glossy) Rp 1.100/pcs ~ (BC) Rp 1000/pcs </span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
 
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/1OPX1FP8-IJ0NW1om7I9mbgK2ApKxks-G=w1000" alt="Tata & Siddiq" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1OPX1FP8-IJ0NW1om7I9mbgK2ApKxks-G';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas BC</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Floral Semi Amplop</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Floral Semi Amplop</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 1.200/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1200/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
 
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/1b3y9dzsFcx-3ANYLYORGp9oJrelGd8uK=w1000" alt="Rindi & Fajar" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1b3y9dzsFcx-3ANYLYORGp9oJrelGd8uK';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas BC</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Tradisional</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Tradisional</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 1.000/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1000/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
 
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/18zrn1mWyQvTBKBtqQ9MZe0SFoXqf2QOj=w1000" alt="Wax Seal" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=18zrn1mWyQvTBKBtqQ9MZe0SFoXqf2QOj';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas Glossy</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Minimalis Modern</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Minimalis Modern</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 1.200/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1200/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
 
-          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 w-[210px] sm:w-[260px] md:w-auto">
-            <div class="relative h-36 sm:h-48 overflow-hidden bg-sweet-blush flex items-center justify-center p-2 sm:p-3">
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
               <img src="https://lh3.googleusercontent.com/d/15XiTAyjeQrZxhOUMSS_Dbzk1vFocO7iY=w1000" alt="Classic Brown" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=15XiTAyjeQrZxhOUMSS_Dbzk1vFocO7iY';">
-              <span class="absolute top-2.5 right-2.5 bg-sweet-primary text-white text-[8px] sm:text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shadow">SOFTCOVER</span>
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
             </div>
-            <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-2.5 sm:space-y-3">
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
               <div>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-accent uppercase block mb-0.5 sm:mb-1">Kertas Glossy / BC</span>
-                <h4 class="font-serif font-bold text-base sm:text-lg text-sweet-primary">Classic Brown Edition</h4>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy / BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Classic Brown Edition</h4>
               </div>
               <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
-                <span class="text-[10px] sm:text-[11px] font-semibold text-sweet-textMuted">Mulai Rp 1.000/pcs</span>
-                <span class="text-[10px] sm:text-[11px] font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Detail <i class="fas fa-arrow-right text-[8px] sm:text-[9px]"></i></span>
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai (Glossy) Rp 1.100/pcs ~ (BC) Rp 1000/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
               </div>
             </div>
           </a>
@@ -344,6 +351,7 @@
     </div>
   </section>
 
+  <!-- Live Preview Smartphone Iframe Section -->
   <section class="py-16 md:py-24 px-6 bg-sweet-bg" id="live-preview">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -447,6 +455,7 @@
     </div>
   </section>
 
+  <!-- Harga & Paket Section -->
   <section class="py-16 md:py-24 px-6 bg-white border-t border-sweet-rose/50" id="katalog">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
@@ -560,6 +569,7 @@
     </div>
   </section>
 
+  <!-- Form Pengisian Data Mempelai Section (Bottom) -->
   <section class="py-16 md:py-24 px-6 bg-sweet-blush/60 border-t border-sweet-rose/60" id="form-mempelai">
     <div class="max-w-4xl mx-auto">
       <div class="bg-white rounded-[36px] p-8 sm:p-12 soft-shadow border border-sweet-rose/80 relative overflow-hidden">
@@ -669,26 +679,30 @@
               <p class="text-[11px] text-sweet-textMuted mt-1">Masukkan nama/link referensi tema digital yang diinginkan.</p>
             </div>
 
+            <div id="soundChoiceWrapper" class="hidden pt-2">
+              <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Link Lagu / Backsound (Opsional)</label>
+              <input type="url" id="linkBacksound" placeholder="Cth: Link YouTube atau Google Drive lagu romantis" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              <p class="text-[11px] text-sweet-textMuted mt-1">Masukkan tautan lagu favorit yang ingin diputar di undangan digital.</p>
+            </div>
+
             <div>
               <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nomor WhatsApp Pemesan</label>
               <input type="tel" id="noWa" required placeholder="Cth: 081234567890" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
             </div>
           </div>
 
-          <div class="text-center pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="w-full sm:w-auto order-2 sm:order-1 bg-sweet-bg border border-sweet-primary text-sweet-primary hover:bg-sweet-blush px-8 py-4 rounded-2xl font-bold text-sm tracking-wide transition flex items-center justify-center gap-2">
-              <i class="fab fa-whatsapp text-lg"></i> Konsultasi
-            </a>
-            <button type="submit" id="submitBtn" class="w-full sm:w-auto order-1 sm:order-2 bg-sweet-accent hover:bg-[#c39263] text-white px-10 py-4 rounded-2xl font-bold text-sm tracking-wide shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3">
-              <i class="fas fa-file-pen text-base"></i> Isi Data Nikah
+          <div class="text-center pt-4">
+            <button type="submit" id="submitBtn" class="w-full sm:w-auto bg-sweet-primary hover:bg-sweet-textDark text-white px-10 py-4 rounded-2xl font-bold text-sm tracking-wide shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3 mx-auto">
+              <i class="fab fa-whatsapp text-lg text-emerald-400"></i> Kirim Data ke Admin
             </button>
+            <p class="text-xs text-sweet-textMuted mt-3 font-medium">WhatsApp akan terbuka otomatis dengan ringkasan data pesanan Anda.</p>
           </div>
-          <p class="text-xs text-center text-sweet-textMuted mt-2 font-medium">WhatsApp akan terbuka otomatis dengan ringkasan data pesanan Anda.</p>
         </form>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-sweet-textDark text-white pt-16 pb-12 px-6 border-t border-sweet-primary">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
       <div class="md:col-span-6 space-y-4">
@@ -725,11 +739,13 @@
     </div>
   </footer>
 
+  <!-- JavaScript Logic -->
   <script>
     function toggleFormFields() {
       const paket = document.getElementById('jenisPaket').value;
       const printQtyWrapper = document.getElementById('printQtyWrapper');
       const themeChoiceWrapper = document.getElementById('themeChoiceWrapper');
+      const soundChoiceWrapper = document.getElementById('soundChoiceWrapper');
       
       if (paket === 'Undangan Digital Saja') {
         printQtyWrapper.style.display = 'none';
@@ -741,9 +757,11 @@
 
       if (paket === 'Undangan Digital Saja' || paket === 'Paket Lengkap (Cetak + Digital)' || paket === 'Promo 1000 Pcs + Free Digital') {
         themeChoiceWrapper.classList.remove('hidden');
+        soundChoiceWrapper.classList.remove('hidden');
         document.getElementById('temaDigital').setAttribute('required', 'true');
       } else {
         themeChoiceWrapper.classList.add('hidden');
+        soundChoiceWrapper.classList.add('hidden');
         document.getElementById('temaDigital').removeAttribute('required');
       }
     }
@@ -771,6 +789,7 @@
         maps: document.getElementById('linkGmaps').value,
         jumlahCetak: document.getElementById('jenisPaket').value !== 'Undangan Digital Saja' ? document.getElementById('jumlahCetak').value : 'Tidak pesan cetak',
         temaDigital: document.getElementById('temaDigital').value || 'Tidak pesan digital',
+        linkBacksound: document.getElementById('linkBacksound').value || '-',
         noWa: document.getElementById('noWa').value
       };
 
@@ -791,9 +810,10 @@
                      `• Tanggal Resepsi: ${data.tglResepsi}\n` +
                      `• Tempat/Lokasi: ${data.lokasi}\n` +
                      `• Google Maps: ${data.maps}\n\n` +
-                     `⚙️️ *DETAIL TAMBAHAN*\n` +
+                     `⚙️ *DETAIL TAMBAHAN*\n` +
                      `• Jumlah Cetak: ${data.jumlahCetak}\n` +
                      `• Tema Digital: ${data.temaDigital}\n` +
+                     `• Link Backsound: ${data.linkBacksound}\n` +
                      `• No. WA Pemesan: ${data.noWa}\n\n` +
                      `_Mohon segera diproses ya kak, terima kasih!_`;
 
