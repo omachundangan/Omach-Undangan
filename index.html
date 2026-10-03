@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omach Undangan - Undangan Pernikahan Aesthetic Gen-Z</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sweet: {
+              bg: '#FDFBF7',
+              card: '#FFFFFF',
+              primary: '#5C4033',
+              accent: '#D4A373',
+              blush: '#F9F1ED',
+              rose: '#EED7CE',
+              textDark: '#3A2E2B',
+              textMuted: '#7D6D65'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #FDFBF7;
+      color: #3A2E2B;
+    }
+    .soft-shadow {
+      box-shadow: 0 15px 35px -5px rgba(92, 64, 51, 0.08);
+    }
+    .hover-lift {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -10px rgba(92, 64, 51, 0.12);
+    }
+    .iphone-frame {
+      box-shadow: 0 20px 40px -15px rgba(92, 64, 51, 0.2);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-sweet-bg text-sweet-textDark antialiased selection:bg-sweet-rose selection:text-sweet-primary">
+
+  <!-- Floating WhatsApp Chat Button -->
+  <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20tanya-tanya%20mengenai%20paket%20undangan%20pernikahan.&type=phone_number&app_absent=0" 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba5a] text-white px-6 py-3.5 rounded-full flex items-center gap-3 font-semibold shadow-xl transition-all duration-300 hover:scale-105"
+     aria-label="Chat WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+    <span class="text-sm md:text-base">Chat Sekarang</span>
+  </a>
+
+  <!-- Header & Navigation Bar -->
+  <header class="sticky top-0 bg-sweet-bg/95 backdrop-blur-md z-40 border-b border-sweet-primary/10 transition-all">
+    <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-2">
+        <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-sweet-primary">Omach Undangan ✨</span>
+      </a>
+
+      <!-- Desktop Nav Links & Right Actions -->
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="#" class="text-xs font-semibold uppercase tracking-wider text-sweet-primary hover:text-sweet-accent transition-colors">Beranda</a>
+        <a href="#katalog-cetak-preview" class="text-xs font-semibold uppercase tracking-wider text-sweet-textMuted hover:text-sweet-primary transition-colors">Cetak Fisik</a>
+        <a href="#live-preview" class="text-xs font-semibold uppercase tracking-wider text-sweet-textMuted hover:text-sweet-primary transition-colors">Web Digital</a>
+        <a href="#katalog" class="text-xs font-semibold uppercase tracking-wider text-sweet-textMuted hover:text-sweet-primary transition-colors">Harga & Paket</a>
+        <a href="#form-mempelai" class="text-xs font-semibold uppercase tracking-wider bg-sweet-accent text-white hover:bg-[#c39263] px-4 py-2 rounded-full transition-all shadow flex items-center gap-1.5"><i class="fas fa-file-pen"></i> Isi Data Nikah</a>
+        <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin%20Omach%20Undangan,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="bg-sweet-primary hover:bg-sweet-textDark text-white px-4 py-2 rounded-full text-xs font-bold tracking-wide transition-all shadow-md">
+          <i class="fab fa-whatsapp mr-1"></i> Konsultasi
+        </a>
+      </nav>
+
+      <!-- Mobile Header Actions -->
+      <div class="flex lg:hidden items-center gap-3">
+        <a href="#form-mempelai" class="bg-sweet-accent text-white px-3 py-1.5 rounded-full text-xs font-bold">Isi Data</a>
+        <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20tanya-tanya%20mengenai%20paket%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="bg-sweet-primary text-white px-3 py-1.5 rounded-full text-xs font-bold">
+          <i class="fab fa-whatsapp"></i> Chat
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Swipeable Cards -->
+  <section class="py-16 md:py-24 px-6 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Hero Text -->
+      <div class="lg:col-span-6 space-y-6">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-sweet-blush border border-sweet-rose rounded-full text-xs font-semibold text-sweet-primary">
+          <i class="fas fa-heart text-sweet-accent"></i> Vibe Nikah Impian Gen-Z & Millennial
+        </div>
+        
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-sweet-primary leading-[1.15]">
+          Bikin Undangan Nikah yang Manis, Estetik, dan Berkesan di Hati ✨
+        </h1>
+        
+        <p class="text-base sm:text-lg text-sweet-textMuted max-w-xl leading-relaxed">
+          Wujudkan pernikahan impianmu bareng <strong>Omach Undangan</strong>. Pilihan cetak fisik super premium dan website undangan digital interaktif yang dijamin bikin tamu gemas dan terpesona!
+        </p>
+        
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#form-mempelai" class="bg-sweet-accent hover:bg-[#c39263] text-white px-7 py-3.5 rounded-full font-bold text-sm tracking-wide transition-all shadow-lg hover:-translate-y-0.5 flex items-center gap-2">
+            <i class="fas fa-file-pen"></i> Isi Data Mempelai
+          </a>
+          <a href="#katalog" class="border-2 border-sweet-primary hover:bg-sweet-blush text-sweet-primary px-7 py-3.5 rounded-full font-bold text-sm tracking-wide transition-all">
+            Cek Pilihan Paket <i class="fas fa-arrow-down ml-1 text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Hero Cards Slider -->
+      <div class="lg:col-span-6 relative">
+        <div class="flex items-center justify-between mb-3 px-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-sweet-primary flex items-center gap-1.5">
+            <i class="fas fa-hand-pointer text-sweet-accent"></i> Geser untuk melihat lainnya
+          </span>
+          <div class="flex gap-2">
+            <button onclick="document.getElementById('heroSlider').scrollBy({left: -440, behavior: 'smooth'})" class="w-9 h-9 rounded-full bg-sweet-primary text-white flex items-center justify-center shadow hover:bg-sweet-textDark transition" aria-label="Geser Kiri">
+              <i class="fas fa-arrow-left text-xs"></i>
+            </button>
+            <button onclick="document.getElementById('heroSlider').scrollBy({left: 440, behavior: 'smooth'})" class="w-9 h-9 rounded-full bg-sweet-primary text-white flex items-center justify-center shadow hover:bg-sweet-textDark transition" aria-label="Geser Kanan">
+              <i class="fas fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <div id="heroSlider" class="flex overflow-x-auto no-scrollbar gap-6 pb-4 pt-2 snap-x snap-mandatory">
+          
+          <!-- Slide 1: Paket Lengkap -->
+          <div class="bg-white rounded-[36px] p-8 sm:p-10 soft-shadow border border-sweet-rose relative overflow-visible flex flex-col justify-between shrink-0 w-full sm:w-[440px] snap-start hover-lift mt-3">
+            <div class="absolute -top-4 right-8 bg-sweet-accent text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md z-20">
+              🌸 Favorit Unggulan
+            </div>
+            <div class="space-y-4">
+              <div class="w-16 h-16 bg-sweet-blush rounded-2xl flex items-center justify-center text-sweet-primary text-2xl shadow-sm">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-sweet-primary">Paket Lengkap Pernikahan</h3>
+              <p class="text-sm text-sweet-textMuted leading-relaxed">
+                Kombinasi sempurna dan serasi antara kartu cetak fisik eksklusif berkualitas premium dengan website undangan digital interaktif full fitur.
+              </p>
+              <ul class="space-y-2.5 text-xs text-sweet-textMuted font-medium pt-2">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-sweet-accent"></i> Desain custom sesuai tema pernikahanmu</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-sweet-accent"></i> Cetak fisik tajam + Free plastik OPP</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-sweet-accent"></i> Web digital lengkap RSVP & hitung mundur</li>
+              </ul>
+            </div>
+            <div class="space-y-3 pt-6 mt-6 border-t border-sweet-rose/50">
+              <a href="https://invee.net/user/template-preview" target="_blank" class="w-full bg-sweet-primary text-white hover:bg-sweet-textDark py-3 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow">
+                <i class="fas fa-mobile-screen"></i> Buka Katalog Digital
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 2: Promo 1000 Pcs -->
+          <div class="bg-gradient-to-br from-sweet-primary via-[#7B5847] to-[#D4A373] text-white rounded-[36px] p-8 sm:p-10 soft-shadow border-2 border-sweet-accent relative overflow-visible flex flex-col justify-between shrink-0 w-full sm:w-[440px] snap-start hover-lift mt-3">
+            <div class="absolute -top-4 right-8 bg-amber-400 text-sweet-primary text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md z-20">
+              🔥 PROMO UTAMA
+            </div>
+            <div class="space-y-4">
+              <div class="w-16 h-16 bg-white/20 text-sweet-rose rounded-2xl flex items-center justify-center text-2xl backdrop-blur-sm shadow-sm">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-sweet-rose">Promo 1.000 Pcs Cetak</h3>
+              <p class="text-sm text-gray-100 leading-relaxed font-medium">
+                Pesan undangan cetak fisik minimal 1.000 pcs langsung dapatkan bonus GRATIS website undangan digital eksklusif full fitur tanpa biaya tambahan!
+              </p>
+              <ul class="space-y-2.5 text-xs text-gray-200 font-medium pt-2">
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-300"></i> Cetak min. 1.000 pcs undangan fisik</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-300"></i> Free undangan digital siap sebar</li>
+                <li class="flex items-center gap-2"><i class="fas fa-check text-amber-300"></i> Prioritas antrean cetak kilat</li>
+              </ul>
+            </div>
+            <div class="space-y-3 pt-6 mt-6 border-t border-white/20">
+              <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin%20Omach%20Undangan,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="w-full bg-white hover:bg-sweet-blush text-sweet-primary py-3 px-4 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 shadow">
+                <i class="fab fa-whatsapp text-emerald-600 text-sm"></i> Klaim Promo Sekarang
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Katalog Cetak Fisik Section -->
+  <section class="py-16 md:py-24 px-6 bg-white border-y border-sweet-rose/50" id="katalog-cetak-preview">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div class="max-w-xl space-y-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-sweet-blush border border-sweet-rose rounded-full text-xs font-semibold text-sweet-primary">
+            <i class="fas fa-print text-sweet-accent"></i> Koleksi Fisik Eksklusif
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-sweet-primary">Contoh Undangan Cetak Aesthetic</h2>
+          <p class="text-sweet-textMuted text-sm">Geser untuk melihat berbagai pilihan desain cetak fisik premium buatan Omach Undangan.</p>
+        </div>
+        <div class="mt-4 md:mt-0 flex gap-3">
+          <button onclick="document.getElementById('scroll-container').scrollBy({left: -320, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Left">
+            <i class="fas fa-arrow-left text-sm"></i>
+          </button>
+          <button onclick="document.getElementById('scroll-container').scrollBy({left: 320, behavior: 'smooth'})" class="w-11 h-11 rounded-full bg-sweet-blush text-sweet-primary flex items-center justify-center shadow hover:bg-sweet-rose transition" aria-label="Scroll Right">
+            <i class="fas fa-arrow-right text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div id="scroll-container" class="flex overflow-x-auto no-scrollbar gap-6 pb-6 pt-2 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible">
+          
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/1DYWVszovmvyCjvYKyLa8_CwHStEOvBhy=w1000" alt="Cetak Utama" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1DYWVszovmvyCjvYKyLa8_CwHStEOvBhy';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Tema Floral</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 900/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/1PcJTG0I6xHtMVnOvql3BBcZMUZXXIFOk=w1000" alt="Serly & Suanton" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1PcJTG0I6xHtMVnOvql3BBcZMUZXXIFOk';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy / BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Simpel Minimaslis</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai (Glossy) Rp 1.100/pcs ~ (BC) Rp 1000/pcs </span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/1OPX1FP8-IJ0NW1om7I9mbgK2ApKxks-G=w1000" alt="Tata & Siddiq" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1OPX1FP8-IJ0NW1om7I9mbgK2ApKxks-G';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Floral Semi Amplop</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1200/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/1b3y9dzsFcx-3ANYLYORGp9oJrelGd8uK=w1000" alt="Rindi & Fajar" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1b3y9dzsFcx-3ANYLYORGp9oJrelGd8uK';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Tradisional</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1000/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/18zrn1mWyQvTBKBtqQ9MZe0SFoXqf2QOj=w1000" alt="Wax Seal" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=18zrn1mWyQvTBKBtqQ9MZe0SFoXqf2QOj';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Minimalis Modern</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai Rp 1200/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="bg-sweet-bg rounded-3xl overflow-hidden soft-shadow border border-sweet-rose/60 group hover-lift flex flex-col snap-start shrink-0 min-w-[280px] sm:min-w-[320px] md:min-w-0">
+            <div class="relative h-64 overflow-hidden bg-sweet-blush flex items-center justify-center p-4">
+              <img src="https://lh3.googleusercontent.com/d/15XiTAyjeQrZxhOUMSS_Dbzk1vFocO7iY=w1000" alt="Classic Brown" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-2xl bg-white p-2 border border-sweet-rose/40" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=15XiTAyjeQrZxhOUMSS_Dbzk1vFocO7iY';">
+              <span class="absolute top-4 right-4 bg-sweet-primary text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">SOFTCOVER</span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <span class="text-xs font-bold text-sweet-accent uppercase block mb-1">Kertas Glossy / BC</span>
+                <h4 class="font-serif font-bold text-xl text-sweet-primary">Classic Brown Edition</h4>
+              </div>
+              <div class="pt-2 border-t border-sweet-rose/60 flex items-center justify-between">
+                <span class="text-xs font-semibold text-sweet-textMuted">Mulai (Glossy) Rp 1.100/pcs ~ (BC) Rp 1000/pcs</span>
+                <span class="text-xs font-bold text-sweet-primary group-hover:underline flex items-center gap-1">Lihat Detail <i class="fas fa-arrow-right text-[10px]"></i></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="inline-flex items-center gap-3 bg-sweet-primary hover:bg-sweet-textDark text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide shadow-lg transition-all duration-300 hover:scale-105">
+          <i class="fas fa-folder-open text-base"></i> Buka Katalog Lengkap Undangan Cetak
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Preview Smartphone Iframe Section -->
+  <section class="py-16 md:py-24 px-6 bg-sweet-bg" id="live-preview">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-sweet-blush border border-sweet-rose rounded-full text-xs font-semibold text-sweet-primary">
+          <i class="fas fa-eye text-sweet-accent"></i> Simulasi Multi-Preview
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-sweet-primary">Contoh Undangan Digital di Smartphone</h2>
+        <p class="text-sweet-textMuted text-base">Tiga contoh tampilan undangan digital interaktif yang siap dibagikan ke seluruh tamu undangan Anda secara penuh tanpa terpotong.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-center justify-items-center">
+        
+        <!-- Preview 1 -->
+        <div class="flex flex-col items-center space-y-4 w-full group">
+          <div class="relative w-[280px] h-[570px] sm:w-[300px] sm:h-[610px] bg-[#221B18] rounded-[48px] p-3 iphone-frame flex flex-col transition-transform duration-300 group-hover:-translate-y-2">
+            <div class="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-black rounded-full z-30 flex items-center justify-center pointer-events-none shadow-md">
+              <div class="w-2 h-2 bg-[#121212] rounded-full absolute right-3"></div>
+              <div class="w-1.5 h-1.5 bg-[#050505] rounded-full absolute left-3"></div>
+            </div>
+            <div class="w-full h-full bg-white rounded-[38px] overflow-hidden relative flex flex-col border border-neutral-800">
+              <div class="bg-sweet-bg px-4 pt-8 pb-2 border-b border-sweet-rose flex items-center justify-between text-[11px] text-sweet-textMuted shrink-0 z-20">
+                <span class="font-bold truncate max-w-[150px]">Adat Jawa</span>
+                <span class="bg-sweet-rose/55 px-2 py-0.5 rounded text-[9px] font-mono text-sweet-primary">invee.net</span>
+              </div>
+              <div class="flex-1 w-full bg-sweet-bg relative overflow-hidden">
+                <iframe src="https://santi-hery.invee.net" class="w-full h-full border-0" title="Santi & Hery"></iframe>
+              </div>
+              <div class="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-black/40 rounded-full pointer-events-none z-30"></div>
+            </div>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-bold uppercase tracking-wider text-sweet-accent block mb-1">Live Preview</span>
+            <h4 class="font-serif font-bold text-lg text-sweet-primary mb-2">Adat Jawa</h4>
+            <a href="https://santi-hery.invee.net" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-sweet-primary hover:text-sweet-textDark underline">
+              <i class="fas fa-external-link-alt text-[10px]"></i> Buka Web Lengkap
+            </a>
+          </div>
+        </div>
+
+        <!-- Preview 2 -->
+        <div class="flex flex-col items-center space-y-4 w-full group">
+          <div class="relative w-[280px] h-[570px] sm:w-[300px] sm:h-[610px] bg-[#221B18] rounded-[48px] p-3 iphone-frame flex flex-col transition-transform duration-300 group-hover:-translate-y-2">
+            <div class="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-black rounded-full z-30 flex items-center justify-center pointer-events-none shadow-md">
+              <div class="w-2 h-2 bg-[#121212] rounded-full absolute right-3"></div>
+              <div class="w-1.5 h-1.5 bg-[#050505] rounded-full absolute left-3"></div>
+            </div>
+            <div class="w-full h-full bg-white rounded-[38px] overflow-hidden relative flex flex-col border border-neutral-800">
+              <div class="bg-sweet-bg px-4 pt-8 pb-2 border-b border-sweet-rose flex items-center justify-between text-[11px] text-sweet-textMuted shrink-0 z-20">
+                <span class="font-bold truncate max-w-[150px]">Floral</span>
+                <span class="bg-sweet-rose/55 px-2 py-0.5 rounded text-[9px] font-mono text-sweet-primary">invee.net</span>
+              </div>
+              <div class="flex-1 w-full bg-sweet-bg relative overflow-hidden">
+                <iframe src="https://elia-rohman.invee.net" class="w-full h-full border-0" title="Elia & Rohman"></iframe>
+              </div>
+              <div class="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-black/40 rounded-full pointer-events-none z-30"></div>
+            </div>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-bold uppercase tracking-wider text-sweet-accent block mb-1">Live Preview</span>
+            <h4 class="font-serif font-bold text-lg text-sweet-primary mb-2">Floral</h4>
+            <a href="https://elia-rohman.invee.net" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-sweet-primary hover:text-sweet-textDark underline">
+              <i class="fas fa-external-link-alt text-[10px]"></i> Buka Web Lengkap
+            </a>
+          </div>
+        </div>
+
+        <!-- Preview 3 -->
+        <div class="flex flex-col items-center space-y-4 w-full group">
+          <div class="relative w-[280px] h-[570px] sm:w-[300px] sm:h-[610px] bg-[#221B18] rounded-[48px] p-3 iphone-frame flex flex-col transition-transform duration-300 group-hover:-translate-y-2">
+            <div class="absolute top-5 left-1/2 transform -translate-x-1/2 w-24 h-6 bg-black rounded-full z-30 flex items-center justify-center pointer-events-none shadow-md">
+              <div class="w-2 h-2 bg-[#121212] rounded-full absolute right-3"></div>
+              <div class="w-1.5 h-1.5 bg-[#050505] rounded-full absolute left-3"></div>
+            </div>
+            <div class="w-full h-full bg-white rounded-[38px] overflow-hidden relative flex flex-col border border-neutral-800">
+              <div class="bg-sweet-bg px-4 pt-8 pb-2 border-b border-sweet-rose flex items-center justify-between text-[11px] text-sweet-textMuted shrink-0 z-20">
+                <span class="font-bold truncate max-w-[150px]">Minimalist</span>
+                <span class="bg-sweet-rose/55 px-2 py-0.5 rounded text-[9px] font-mono text-sweet-primary">invee.net</span>
+              </div>
+              <div class="flex-1 w-full bg-sweet-bg relative overflow-hidden">
+                <iframe src="https://hikma-rizal.invee.net" class="w-full h-full border-0" title="Hikma & Rizal"></iframe>
+              </div>
+              <div class="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 w-28 h-1 bg-black/40 rounded-full pointer-events-none z-30"></div>
+            </div>
+          </div>
+          <div class="text-center">
+            <span class="text-xs font-bold uppercase tracking-wider text-sweet-accent block mb-1">Live Preview</span>
+            <h4 class="font-serif font-bold text-lg text-sweet-primary mb-2">Minimalist</h4>
+            <a href="https://hikma-rizal.invee.net" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-sweet-primary hover:text-sweet-textDark underline">
+              <i class="fas fa-external-link-alt text-[10px]"></i> Buka Web Lengkap
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="https://invee.net/user/template-preview" target="_blank" class="inline-flex items-center gap-3 bg-sweet-primary hover:bg-sweet-textDark text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide shadow-lg transition-all duration-300 hover:scale-105">
+          <i class="fas fa-mobile-screen text-base"></i> Buka Katalog Lengkap Undangan Digital
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harga & Paket Section -->
+  <section class="py-16 md:py-24 px-6 bg-white border-t border-sweet-rose/50" id="katalog">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-sweet-primary">Pilihan Paket & Penawaran Spesial</h2>
+        <p class="text-sweet-textMuted text-base">Desain elegan berkualitas tinggi yang disesuaikan untuk momen spesial Anda dengan harga bersahabat dan promo menarik.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        
+        <!-- Paket 1: Undangan Cetak -->
+        <div class="bg-sweet-bg rounded-[32px] p-8 sm:p-10 soft-shadow border border-sweet-rose/60 flex flex-col justify-between hover-lift">
+          <div>
+            <div class="w-14 h-14 bg-sweet-blush text-sweet-primary rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-sm">
+              <i class="fas fa-print"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-sweet-primary mb-2">Undangan Cetak</h3>
+            <p class="text-sweet-textMuted text-sm mb-6">Tersedia ragam pilihan model softcover floral elegan.</p>
+            
+            <div class="flex items-baseline gap-2 my-6 pb-6 border-b border-sweet-rose">
+              <span class="text-sm font-semibold text-sweet-textMuted">Start From</span>
+              <span class="font-serif text-4xl font-bold text-sweet-primary">Rp 700</span>
+              <span class="text-sm text-sweet-textMuted">/ pcs</span>
+            </div>
+
+            <ul class="space-y-3.5 mb-8 text-sm text-sweet-textMuted font-medium">
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Bahan kertas premium berkualitas tinggi</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Free plastik OPP</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Hasil cetak tajam, rapi, dan presisi</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Banyak pilihan katalog desain terbaru</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <a href="https://drive.google.com/drive/folders/15q6kuUr8ck44aaSIagTaQhHt4xtZaU17" target="_blank" class="w-full border-2 border-sweet-primary hover:bg-sweet-blush text-sweet-primary py-3.5 px-4 rounded-2xl font-bold text-xs transition flex items-center justify-center gap-2">
+              <i class="fas fa-folder-open"></i> Katalog Cetak
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20tanya-tanya%20mengenai%20paket%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="w-full bg-sweet-primary hover:bg-sweet-textDark text-white py-3.5 px-4 rounded-2xl font-bold text-xs transition shadow-md flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp"></i> Pesan Undangan Cetak
+            </a>
+          </div>
+        </div>
+
+        <!-- Paket 2: Undangan Digital -->
+        <div class="bg-sweet-bg rounded-[32px] p-8 sm:p-10 soft-shadow border border-sweet-rose/60 flex flex-col justify-between hover-lift">
+          <div>
+            <div class="w-14 h-14 bg-sweet-blush text-sweet-primary rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-sm">
+              <i class="fas fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-sweet-primary mb-2">Undangan Digital</h3>
+            <p class="text-sweet-textMuted text-sm mb-6">Website undangan eksklusif yang mudah dibagikan melalui WhatsApp.</p>
+            
+            <div class="flex items-baseline gap-2 my-6 pb-6 border-b border-sweet-rose">
+              <span class="text-sm font-semibold text-sweet-textMuted">Hanya</span>
+              <span class="font-serif text-4xl font-bold text-sweet-primary">Rp 70.000</span>
+            </div>
+
+            <ul class="space-y-3.5 mb-8 text-sm text-sweet-textMuted font-medium">
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Navigasi petunjuk lokasi Google Maps</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Hitung mundur acara (Countdown Timer)</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Musik latar romantis & galeri foto</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-primary"></i> Fitur RSVP konfirmasi kehadiran & ucapan</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <a href="https://invee.net/user/template-preview" target="_blank" class="w-full border-2 border-sweet-primary hover:bg-sweet-blush text-sweet-primary py-3.5 px-4 rounded-2xl font-bold text-xs transition flex items-center justify-center gap-2">
+              <i class="fas fa-mobile-screen"></i> Katalog Digital
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin,%20saya%20ingin%20tanya-tanya%20mengenai%20paket%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="w-full bg-sweet-primary hover:bg-sweet-textDark text-white py-3.5 px-4 rounded-2xl font-bold text-xs transition shadow-md flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp"></i> Pesan Undangan Digital
+            </a>
+          </div>
+        </div>
+
+        <!-- Paket 3: Promo 1000 Pcs -->
+        <div class="bg-gradient-to-br from-sweet-primary to-sweet-textDark text-white rounded-[32px] p-8 sm:p-10 soft-shadow border-2 border-sweet-accent flex flex-col justify-between hover-lift relative">
+          <span class="absolute -top-4 right-8 bg-sweet-accent text-white text-[11px] font-bold uppercase tracking-wider px-4 py-1.5 rounded-full shadow-md">
+            🔥 Penawaran Eksklusif
+          </span>
+
+          <div>
+            <div class="w-14 h-14 bg-sweet-accent/30 text-sweet-rose rounded-2xl flex items-center justify-center text-2xl mb-6 shadow-md border border-sweet-accent/40">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3 class="font-serif text-2xl font-bold text-sweet-rose mb-2">Promo 1.000 Pcs Cetak!</h3>
+            <p class="text-gray-300 text-sm mb-6 leading-relaxed">
+              Pilihan terbaik untuk pernikahan besar dengan benefit maksimal tanpa biaya tambahan.
+            </p>
+            
+            <div class="flex items-baseline gap-2 my-6 pb-6 border-b border-white/10">
+              <span class="text-xs font-semibold text-gray-300">Bonus Spesial</span>
+              <span class="font-serif text-3xl font-bold text-sweet-rose">FREE Digital</span>
+            </div>
+
+            <ul class="space-y-3.5 mb-8 text-sm text-gray-200 font-medium">
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-accent"></i> Cetak minimal 1.000 pcs undangan fisik</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-accent"></i> Langsung dapat Undangan Digital Free</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-accent"></i> Free plastik OPP</li>
+              <li class="flex items-center gap-3"><i class="fas fa-check-circle text-sweet-accent"></i> Prioritas antrean cetak kilat</li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <a href="https://api.whatsapp.com/send/?phone=62895423022472&text=Halo%20Admin%20Omach%20Undangan,%20saya%20ingin%20konsultasi%20mengenai%20pembuatan%20undangan%20pernikahan.&type=phone_number&app_absent=0" target="_blank" class="w-full bg-sweet-accent hover:bg-[#c39263] text-white py-3.5 px-4 rounded-2xl font-bold text-xs transition shadow-lg flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-base"></i> Klaim Promo Sekarang
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Pengisian Data Mempelai Section (Bottom) -->
+  <section class="py-16 md:py-24 px-6 bg-sweet-blush/60 border-t border-sweet-rose/60" id="form-mempelai">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-[36px] p-8 sm:p-12 soft-shadow border border-sweet-rose/80 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-sweet-rose/20 rounded-bl-full pointer-events-none"></div>
+        
+        <div class="text-center max-w-xl mx-auto mb-10 space-y-3">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-sweet-blush border border-sweet-rose rounded-full text-xs font-semibold text-sweet-primary">
+            <i class="fas fa-clipboard-list text-sweet-accent"></i> Formulir Pengisian Data Pernikahan
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sweet-primary">Data Diri Mempelai & Acara</h2>
+          <p class="text-sweet-textMuted text-sm">Isi data di bawah ini untuk memulai pembuatan undangan impianmu. Data akan langsung diformat rapi dan dikirim ke WhatsApp admin!</p>
+        </div>
+
+        <form id="weddingForm" onsubmit="submitToWhatsAppOnly(event)" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Mempelai Pria -->
+            <div class="space-y-4 bg-sweet-bg p-6 rounded-2xl border border-sweet-rose/50">
+              <h3 class="font-serif font-bold text-lg text-sweet-primary flex items-center gap-2 border-b border-sweet-rose pb-2">
+                <i class="fas fa-mars text-blue-500"></i> Mempelai Pria
+              </h3>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Lengkap Pria</label>
+                <input type="text" id="namaPria" required placeholder="Cth: Ahmad Heryanto, S.Kom" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Panggilan Pria</label>
+                <input type="text" id="panggilanPria" required placeholder="Cth: Hery" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Orang Tua (Putra dari...)</label>
+                <input type="text" id="ortuPria" required placeholder="Bapak Budi & Ibu Siti" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Alamat Lengkap Pria</label>
+                <textarea id="alamatPria" rows="2" required placeholder="Cth: Jl. Merdeka No. 12, Batam" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent"></textarea>
+              </div>
+            </div>
+
+            <!-- Mempelai Wanita -->
+            <div class="space-y-4 bg-sweet-bg p-6 rounded-2xl border border-sweet-rose/50">
+              <h3 class="font-serif font-bold text-lg text-sweet-primary flex items-center gap-2 border-b border-sweet-rose pb-2">
+                <i class="fas fa-venus text-pink-500"></i> Mempelai Wanita
+              </h3>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Lengkap Wanita</label>
+                <input type="text" id="namaWanita" required placeholder="Cth: Siti Aminah, S.Pd" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Panggilan Wanita</label>
+                <input type="text" id="panggilanWanita" required placeholder="Cth: Aminah" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nama Orang Tua (Putri dari...)</label>
+                <input type="text" id="ortuWanita" required placeholder="Bapak Joko & Ibu Ani" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Alamat Lengkap Wanita</label>
+                <textarea id="alamatWanita" rows="2" required placeholder="Cth: Jl. Melati No. 45, Batam" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent"></textarea>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Jadwal & Lokasi -->
+          <div class="space-y-4 bg-sweet-bg p-6 rounded-2xl border border-sweet-rose/50">
+            <h3 class="font-serif font-bold text-lg text-sweet-primary flex items-center gap-2 border-b border-sweet-rose pb-2">
+              <i class="fas fa-calendar-days text-sweet-accent"></i> Jadwal & Lokasi Acara
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Tanggal Akad</label>
+                <input type="date" id="tglAkad" required class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Tanggal Resepsi</label>
+                <input type="date" id="tglResepsi" required class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Lokasi Gedung / Alamat Lengkap</label>
+              <textarea id="lokasiAcara" rows="2" required placeholder="Cth: Gedung Serbaguna Grand Ballroom, Batam" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent"></textarea>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Link Google Maps / Share Lokasi</label>
+              <input type="url" id="linkGmaps" required placeholder="Cth: https://maps.app.goo.gl/xxxxxx" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Pilihan Jenis Undangan</label>
+                <select id="jenisPaket" onchange="toggleFormFields()" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+                  <option value="Undangan Cetak Saja">Undangan Cetak Saja</option>
+                  <option value="Undangan Digital Saja">Undangan Digital Saja (Rp 70.000)</option>
+                  <option value="Paket Lengkap (Cetak + Digital)">Paket Lengkap (Cetak + Digital)</option>
+                  <option value="Promo 1000 Pcs + Free Digital">Promo 1.000 Pcs + Free Digital</option>
+                </select>
+              </div>
+              <div id="printQtyWrapper">
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Jumlah Pesanan Cetak (Pcs)</label>
+                <input type="number" id="jumlahCetak" min="100" value="500" placeholder="Cth: 500" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+            </div>
+
+            <div id="themeChoiceWrapper" class="hidden pt-2">
+              <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Pilih Tema Undangan Digital</label>
+              <input type="text" id="temaDigital" placeholder="Cth: Adat Jawa / Floral / Minimalist Modern" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              <p class="text-[11px] text-sweet-textMuted mt-1">Masukkan nama/link referensi tema digital yang diinginkan.</p>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Nomor WhatsApp Pemesan</label>
+              <input type="tel" id="noWa" required placeholder="Cth: 081234567890" class="w-full bg-white border border-sweet-rose rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+            </div>
+          </div>
+
+          <div class="text-center pt-4">
+            <button type="submit" id="submitBtn" class="w-full sm:w-auto bg-sweet-primary hover:bg-sweet-textDark text-white px-10 py-4 rounded-2xl font-bold text-sm tracking-wide shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-3 mx-auto">
+              <i class="fab fa-whatsapp text-lg text-emerald-400"></i> Kirim Data ke Admin
+            </button>
+            <p class="text-xs text-sweet-textMuted mt-3 font-medium">WhatsApp akan terbuka otomatis dengan ringkasan data pesanan Anda.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sweet-textDark text-white pt-16 pb-12 px-6 border-t border-sweet-primary">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
+      <div class="md:col-span-6 space-y-4">
+        <div class="flex items-center gap-3">
+          <span class="font-serif text-xl font-bold text-white tracking-wider">Omach Undangan ✨</span>
+        </div>
+        <p class="text-gray-300 text-sm max-w-md leading-relaxed font-medium">
+          Penyedia jasa pembuatan undangan pernikahan digital dan cetak berkualitas dengan sentuhan desain manis, hangat, dan berkesan untuk hari bahagia Anda.
+        </p>
+      </div>
+
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="font-serif text-lg font-bold text-sweet-rose">Tautan Penting</h4>
+        <ul class="space-y-2.5 text-sm text-gray-300 font-medium">
+          <li><a href="#" class="hover:text-sweet-accent transition">Beranda</a></li>
+          <li><a href="#form-mempelai" class="hover:text-sweet-accent transition">Isi Data Nikah</a></li>
+          <li><a href="#katalog-cetak-preview" class="hover:text-sweet-accent transition">Cetak Fisik</a></li>
+          <li><a href="#live-preview" class="hover:text-sweet-accent transition">Web Digital</a></li>
+          <li><a href="#katalog" class="hover:text-sweet-accent transition">Harga & Paket</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="font-serif text-lg font-bold text-sweet-rose">Hubungi Kami</h4>
+        <ul class="space-y-2.5 text-sm text-gray-300 font-medium">
+          <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400"></i> +62 895-4230-22472</li>
+          <li class="flex items-center gap-2"><i class="fas fa-clock text-amber-400"></i> Setiap Hari (08.00 - 21.00 WIB)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-8 border-t border-white/10 text-center text-xs text-gray-400 font-medium">
+      <p>&copy; 2026 Omach Undangan. Hak Cipta Dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function toggleFormFields() {
+      const paket = document.getElementById('jenisPaket').value;
+      const printQtyWrapper = document.getElementById('printQtyWrapper');
+      const themeChoiceWrapper = document.getElementById('themeChoiceWrapper');
+      
+      if (paket === 'Undangan Digital Saja') {
+        printQtyWrapper.style.display = 'none';
+        document.getElementById('jumlahCetak').removeAttribute('required');
+      } else {
+        printQtyWrapper.style.display = 'block';
+        document.getElementById('jumlahCetak').setAttribute('required', 'true');
+      }
+
+      if (paket === 'Undangan Digital Saja' || paket === 'Paket Lengkap (Cetak + Digital)' || paket === 'Promo 1000 Pcs + Free Digital') {
+        themeChoiceWrapper.classList.remove('hidden');
+        document.getElementById('temaDigital').setAttribute('required', 'true');
+      } else {
+        themeChoiceWrapper.classList.add('hidden');
+        document.getElementById('temaDigital').removeAttribute('required');
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      toggleFormFields();
+    });
+
+    function submitToWhatsAppOnly(event) {
+      event.preventDefault();
+
+      const data = {
+        paket: document.getElementById('jenisPaket').value,
+        namaPria: document.getElementById('namaPria').value,
+        panggilanPria: document.getElementById('panggilanPria').value,
+        alamatPria: document.getElementById('alamatPria').value,
+        ortuPria: document.getElementById('ortuPria').value,
+        namaWanita: document.getElementById('namaWanita').value,
+        panggilanWanita: document.getElementById('panggilanWanita').value,
+        alamatWanita: document.getElementById('alamatWanita').value,
+        ortuWanita: document.getElementById('ortuWanita').value,
+        tglAkad: document.getElementById('tglAkad').value,
+        tglResepsi: document.getElementById('tglResepsi').value,
+        lokasi: document.getElementById('lokasiAcara').value,
+        maps: document.getElementById('linkGmaps').value,
+        jumlahCetak: document.getElementById('jenisPaket').value !== 'Undangan Digital Saja' ? document.getElementById('jumlahCetak').value : 'Tidak pesan cetak',
+        temaDigital: document.getElementById('temaDigital').value || 'Tidak pesan digital',
+        noWa: document.getElementById('noWa').value
+      };
+
+      const waText = `📋 *KONFIRMASI PESANAN OMACH UNDANGAN* 📋\n\n` +
+                     `📦 *Pilihan Paket:* ${data.paket}\n\n` +
+                     `🤵 *MEMPELAI PRIA*\n` +
+                     `• Nama Lengkap: ${data.namaPria}\n` +
+                     `• Nama Panggilan: *${data.panggilanPria}*\n` +
+                     `• Alamat: ${data.alamatPria}\n` +
+                     `• Putra dari: ${data.ortuPria}\n\n` +
+                     `👰 *MEMPELAI WANITA*\n` +
+                     `• Nama Lengkap: ${data.namaWanita}\n` +
+                     `• Nama Panggilan: *${data.panggilanWanita}*\n` +
+                     `• Alamat: ${data.alamatWanita}\n` +
+                     `• Putri dari: ${data.ortuWanita}\n\n` +
+                     `📅 *ACARA & LOKASI*\n` +
+                     `• Tanggal Akad: ${data.tglAkad}\n` +
+                     `• Tanggal Resepsi: ${data.tglResepsi}\n` +
+                     `• Tempat/Lokasi: ${data.lokasi}\n` +
+                     `• Google Maps: ${data.maps}\n\n` +
+                     `⚙️ *DETAIL TAMBAHAN*\n` +
+                     `• Jumlah Cetak: ${data.jumlahCetak}\n` +
+                     `• Tema Digital: ${data.temaDigital}\n` +
+                     `• No. WA Pemesan: ${data.noWa}\n\n` +
+                     `_Mohon segera diproses ya kak, terima kasih!_`;
+
+      const waURL = `https://api.whatsapp.com/send?phone=62895423022472&text=${encodeURIComponent(waText)}`;
+      window.open(waURL, '_blank');
+    }
+  </script>
+
+</body>
+</html>
