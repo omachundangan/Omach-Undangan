@@ -646,8 +646,18 @@
                 <input type="date" id="tglAkad" required class="w-full bg-white border border-sweet-rose rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
               </div>
               <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Jam Akad</label>
+                <input type="text" id="jamAkad" required placeholder="Cth: 08.00 WIB - Selesai" class="w-full bg-white border border-sweet-rose rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
                 <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Tanggal Resepsi</label>
                 <input type="date" id="tglResepsi" required class="w-full bg-white border border-sweet-rose rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-sweet-primary uppercase tracking-wider mb-1.5">Jam Resepsi</label>
+                <input type="text" id="jamResepsi" required placeholder="Cth: 11.00 - 14.00 WIB" class="w-full bg-white border border-sweet-rose rounded-xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-sweet-accent">
               </div>
             </div>
             <div>
@@ -785,7 +795,9 @@
         alamatWanita: document.getElementById('alamatWanita').value,
         ortuWanita: document.getElementById('ortuWanita').value,
         tglAkad: document.getElementById('tglAkad').value,
+        jamAkad: document.getElementById('jamAkad').value,
         tglResepsi: document.getElementById('tglResepsi').value,
+        jamResepsi: document.getElementById('jamResepsi').value,
         lokasi: document.getElementById('lokasiAcara').value,
         maps: document.getElementById('linkGmaps').value,
         jumlahCetak: document.getElementById('jenisPaket').value !== 'Undangan Digital Saja' ? document.getElementById('jumlahCetak').value : 'Tidak pesan cetak',
@@ -794,7 +806,7 @@
         noWa: document.getElementById('noWa').value
       };
 
-      const waText = `📱 *KONFIRMASI PESANAN OMACH UNDANGAN* 📱\n\n` +
+      const waText = `📋 *KONFIRMASI PESANAN OMACH UNDANGAN* 📋\n\n` +
                      `📦 *Pilihan Paket:* ${data.paket}\n\n` +
                      `🤵 *MEMPELAI PRIA*\n` +
                      `• Nama Lengkap: ${data.namaPria}\n` +
@@ -807,8 +819,8 @@
                      `• Alamat: ${data.alamatWanita}\n` +
                      `• Putri dari: ${data.ortuWanita}\n\n` +
                      `📅 *ACARA & LOKASI*\n` +
-                     `• Tanggal Akad: ${data.tglAkad}\n` +
-                     `• Tanggal Resepsi: ${data.tglResepsi}\n` +
+                     `• Tanggal Akad: ${data.tglAkad} (${data.jamAkad})\n` +
+                     `• Tanggal Resepsi: ${data.tglResepsi} (${data.jamResepsi})\n` +
                      `• Tempat/Lokasi: ${data.lokasi}\n` +
                      `• Google Maps: ${data.maps}\n\n` +
                      `⚙️ *DETAIL TAMBAHAN*\n` +
